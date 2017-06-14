@@ -10,3 +10,8 @@
 - type: replace
   path: /instance_groups/name=nginx/instances
   value: 3
+
+- type: replace
+  path: /properties/-
+  value:
+    github_repo: https://github.com/shreddedbacon/startbootstrap-freelancer.git
