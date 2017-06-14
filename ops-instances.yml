@@ -11,7 +11,7 @@
   value: 2
 
 - type: replace
-  path: /instance_groups/name=nginx/jobs
+  path: /instance_groups/name=nginx/jobs/-
   value:
     - name: nginx
       release: nginx
@@ -19,7 +19,7 @@
       release: website
 
 - type: replace
-  path: /releases
+  path: /releases/-
   value:
     - name: nginx
       version: latest
