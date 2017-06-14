@@ -12,6 +12,5 @@
   value: 3
 
 - type: replace
-  path: /properties/?
-  value:
-    github_repo: https://github.com/shreddedbacon/startbootstrap-freelancer.git
+  path: /properties/name=github_repo?
+  value: https://github.com/shreddedbacon/startbootstrap-freelancer.git
