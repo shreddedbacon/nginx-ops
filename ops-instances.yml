@@ -20,10 +20,8 @@
       release: website
 
 - type: replace
-  path: /releases/?
+  path: /releases/-
   value:
-    - name: nginx
-      version: latest
-    - name: website
-      version: latest
+    name: website
+    version: latest
 
