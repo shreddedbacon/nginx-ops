@@ -10,16 +10,3 @@
 - type: replace
   path: /instance_groups/name=nginx/instances
   value: 3
-
-- type: replace
-  path: /instance_groups/name=nginx/jobs/-
-  value:
-    name: website
-    release: website
-
-- type: replace
-  path: /releases/-
-  value:
-    name: website
-    version: latest
-
