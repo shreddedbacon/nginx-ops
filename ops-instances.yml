@@ -6,10 +6,17 @@
       - 10.244.0.50
       - 10.244.0.51
       - 10.244.0.52
+      - 10.244.0.53
+      - 10.244.0.54
+      - 10.244.0.55
+      - 10.244.0.56
+      - 10.244.0.57
+      - 10.244.0.58
+      - 10.244.0.59
 
 - type: replace
   path: /instance_groups/name=nginx/instances
-  value: 3
+  value: 10
 
 - type: replace
   path: /properties/github_repo?
