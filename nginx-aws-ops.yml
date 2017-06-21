@@ -35,3 +35,7 @@
 - type: replace
   path: /stemcells/alias=default/name
   value: bosh-aws-xen-hvm-ubuntu-trusty-go_agent
+
+- type: replace
+  path: /stemcells/alias=default/version
+  value: 3421.6
