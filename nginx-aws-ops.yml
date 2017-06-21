@@ -12,6 +12,9 @@
 - type: replace
   path: /instance_groups/name=nginx/vm_type
   value: default
+
+- type: replace
+  path: /instance_groups/name=nginx/vmtype=default/?
     cloud_properties: { lb_target_groups: [webservers] }
 
 - type: replace
