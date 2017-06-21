@@ -12,7 +12,7 @@
   value: default
 
 - type: replace
-  path: /instance_groups/name=nginx/vmtype/name=default/cloud_properties/elbs?
+  path: /instance_groups/name=nginx/vm_type/name=default/cloud_properties/elbs?
   value: [nginx]
 
 - type: replace
