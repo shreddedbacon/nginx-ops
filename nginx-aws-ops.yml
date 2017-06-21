@@ -1,9 +1,9 @@
 - type: replace
-  path: /instance_groups/name=nginx/jobs/name=nginx/azs
+  path: /instance_groups/name=nginx/jobs/name=nginx/azs?
   value: [z1, z2, z3]
 
 - type: replace
-  path: /instance_groups/name=nginx/jobs/name=website/azs
+  path: /instance_groups/name=nginx/jobs/name=website/azs?
   value: [z1, z2, z3]
 
 - type: replace
