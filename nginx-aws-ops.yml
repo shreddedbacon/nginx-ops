@@ -9,10 +9,10 @@
 
 - type: replace
   path: /instance_groups/name=nginx/vm_type
-  value: nginx
+  value: default
 
 - type: replace
-  path: /instance_groups/name=nginx/vmtype/cloud_properties/lb_target_groups?
+  path: /instance_groups/name=nginx/vmtype/name=default/cloud_properties/elbs?
   value: [nginx]
 
 - type: replace
