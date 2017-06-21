@@ -23,3 +23,7 @@
   path: /properties/github_repo?
   #  value: https://github.com/BlackrockDigital/startbootstrap-sb-admin-2.git
   value: https://github.com/shreddedbacon/startbootstrap-freelancer.git
+
+- type: replace
+  path: /stemcells/alias=default/name
+  value: bosh-aws-xen-hvm-ubuntu-trusty-go_agent
