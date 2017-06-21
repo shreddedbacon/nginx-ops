@@ -2,14 +2,6 @@
   path: /instance_groups/name=nginx/azs
   value: [z1, z2, z3]
 
-  #- type: replace
-  #  path: /instance_groups/name=nginx/jobs/name=nginx/azs?
-  #  value: [z1, z2, z3]
-  #
-  #- type: replace
-  #  path: /instance_groups/name=nginx/jobs/name=website/azs?
-  #  value: [z1, z2, z3]
-
 - type: replace
   path: /instance_groups/name=nginx/networks
   value:
@@ -19,9 +11,9 @@
   path: /instance_groups/name=nginx/vm_type
   value: nginx
 
-  #- type: replace
-  #path: /instance_groups/name=nginx/vmtype/?
-  #  cloud_properties: { lb_target_groups: [webservers] }
+- type: replace
+  path: /instance_groups/name=nginx/vmtype/cloud_properties/lb_target_groups?
+  value: [nginx]
 
 - type: replace
   path: /instance_groups/name=nginx/instances
