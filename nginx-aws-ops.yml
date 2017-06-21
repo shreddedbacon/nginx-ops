@@ -7,7 +7,7 @@
   value:
     - name: example_web_a
     - name: example_web_b
-    - nane: example_web_c
+    - name: example_web_c
 
 - type: replace
   path: /instance_groups/name=nginx/vm_type
