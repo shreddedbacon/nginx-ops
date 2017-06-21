@@ -6,8 +6,11 @@
   path: /instance_groups/name=nginx/networks
   value:
     - name: example_web_a
+      az: [z1]
     - name: example_web_b
+      az: [z2]
     - name: example_web_c
+      az: [z3]
 
 - type: replace
   path: /instance_groups/name=nginx/vm_type
